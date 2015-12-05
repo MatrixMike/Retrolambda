@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0099cc"
+    android:background="#cd48e8"
     tools:context="com.electroteach.mike.retrolambda.FullscreenActivity">
 
     <!-- The primary full-screen view. This can be replaced with whatever view
@@ -61,7 +61,8 @@
             android:text="Extra 1"
             android:id="@+id/button2"
             android:layout_gravity="center_horizontal|top"
-            android:textColor="#e61a1a" />
+            android:textColor="#e61a1a"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:orientation="vertical"
@@ -75,8 +76,22 @@
             android:layout_height="wrap_content"
             android:text="New Switch"
             android:id="@+id/switch1"
-            android:layout_gravity="right|top"
-            android:enabled="false" />
+            android:layout_gravity="top"
+            android:enabled="true" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:layout_gravity="right|center_vertical" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_gravity="right|bottom" />
     </FrameLayout>
 
 </FrameLayout>
