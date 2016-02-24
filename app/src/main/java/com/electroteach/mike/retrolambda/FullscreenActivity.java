@@ -108,6 +108,7 @@ public class FullscreenActivity extends AppCompatActivity {
         }
         */
         int DOM;
+        int MOY;   // month of year
         String msg1 = "Greetings Mike VK3KMJ / G7TKM";
         String msg2;
 
@@ -119,12 +120,14 @@ public class FullscreenActivity extends AppCompatActivity {
         mControlsView = findViewById(R.id.fullscreen_content_controls);
         mContentView = findViewById(R.id.fullscreen_content);
         DOM = cldr.get(Calendar.DAY_OF_MONTH);
+        MOY = cldr.get(Calendar.MONTH);
+
         Button view  = (Button) findViewById(R.id.button);
         Button view2 = (Button) findViewById(R.id.button2);
         Button view3 = (Button) findViewById(R.id.switch1);
       /* Button view4 = (Button) findViewById(R.id.button2); */
 
-        msg2 = Integer.toString(DOM);
+        msg2 = Integer.toString(DOM) +" / " + Integer.toString(MOY);
         view.setOnClickListener(e -> Toast.makeText(this, msg1, Toast.LENGTH_LONG).show());
         view2.setOnClickListener(e -> Toast.makeText(this, msg2, Toast.LENGTH_LONG).show());
         // Set up the user interaction to manually show or hide the system UI.
