@@ -108,7 +108,7 @@ public class FullscreenActivity extends AppCompatActivity {
         }
         */
         int DOM;
-        String msg1 = "hello Mike VK3KMJ";
+        String msg1 = "hello Mike VK3KMJ / G7TKM";
         String msg2;
 
         Calendar cldr = Calendar.getInstance();
