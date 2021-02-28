@@ -47,51 +47,51 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Press me"
-            android:id="@+id/button"
             android:layout_gravity="center"
+            android:text="Press me"
             android:textColor="#e514ec" />
 
         <Button
+            android:id="@+id/button2"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Extra 1"
-            android:id="@+id/button2"
             android:layout_gravity="center_horizontal|top"
+            android:text="Extra 1"
             android:textColor="#e61a1a"
             android:textStyle="bold" />
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="120dp"
             android:layout_height="match_parent"
             android:layout_gravity="left|center_vertical"
+            android:orientation="vertical"
             android:showDividers="beginning"></LinearLayout>
 
         <Switch
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Switch"
             android:id="@+id/switch1"
-            android:layout_gravity="top"
-            android:enabled="true" />
-
-        <ListView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/listView"
-            android:layout_gravity="right|center_vertical" />
+            android:layout_gravity="top"
+            android:enabled="true"
+            android:text="New Switch" />
 
         <EditText
+            android:id="@+id/editText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="date"
+            android:layout_gravity="right|bottom"
             android:ems="10"
-            android:id="@+id/editText"
-            android:layout_gravity="right|bottom" />
+            android:inputType="date" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
     </FrameLayout>
 
 </FrameLayout>
